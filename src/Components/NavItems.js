@@ -1,18 +1,18 @@
 export const NavItems = [
     {
         title: 'Home',
-        url: '#'
+        url: 'home'
     },
     {
         title: 'Projects',
-        url: '#'
+        url: 'projects'
     },
     {
         title: 'About',
-        url: '#'
+        url: 'about'
     },
     {
         title: 'Resources',
-        url: '#'
+        url: 'resources'
     }
 ]
