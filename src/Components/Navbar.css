@@ -57,6 +57,10 @@ body {
     background-color: rgba(150, 150, 150, 0.33);
 }
 
+.button {
+    margin-top: 36px;
+}
+
 .menu-icon.active {
     position: absolute;
     right: 70%;

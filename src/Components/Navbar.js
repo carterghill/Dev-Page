@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
+import { Button } from "./Button"
 import './Navbar.css'
 
 class Navbar extends Component {
@@ -29,6 +30,7 @@ class Navbar extends Component {
                                 href={item.url}>{item.title}</a></li>
                             )
                         })}
+                        <li className="button"><Button>Contact</Button></li>
                     </ul>
                 </div>
 
