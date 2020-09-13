@@ -1,6 +1,11 @@
+/* Disables side scroll */
+body {
+    width:100%;
+    overflow-x: hidden;
+}
 
 .top-bar {
-    background-color: blue;
+    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);
     height: 100px;
     width: 100%;
     align-items: center;
@@ -11,13 +16,13 @@
     position: absolute;
     right: 0%;
     transform: translate(-150%, 65%);
-    border-radius: 5px;
     transition: all 0.5s ease-out;
 }
 
 .menu {
+    overflow: hidden;
     position: absolute;
-    background-color: yellow;
+    background: linear-gradient(90deg, rgb(0, 74, 125) 0%, rgba(73,63,200,1) 100%);
     left: 100%;
     top: 0;
     width: 0%;
@@ -25,9 +30,36 @@
     transition: all 0.5s ease-out;
 }
 
+.list {
+    font-size: 22px;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(1, 6);
+    text-align: center;
+    padding-right: 24px;
+}
+
+.item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.item-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 20%;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+.item-link:hover {
+    background-color: rgba(150, 150, 150, 0.33);
+}
+
 .menu-icon.active {
     position: absolute;
-    right: 75%;
+    right: 70%;
     transform: translate(-150%, 65%);
     border-radius: 5px;
     transition: all 0.5s ease-out;
@@ -35,10 +67,10 @@
 
 .menu.active {
     position: absolute;
-    background-color: yellow;
-    left: 25%;
+    background-color: purple;
+    left: 30%;
     top: 0;
-    width: 75%;
+    width: 70%;
     height: 100vh;
     transition: all 0.5s ease-out;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
 import './Navbar.css'
 
@@ -21,7 +22,14 @@ class Navbar extends Component {
                 </div>
 
                 <div className={ this.state.clicked ? 'menu active' : 'menu' }>
-
+                    <ul className='list'>
+                        {NavItems.map((item, index) => {
+                            return (
+                                <li className='item'><a className='item-link'
+                                href={item.url}>{item.title}</a></li>
+                            )
+                        })}
+                    </ul>
                 </div>
 
             </nav>
