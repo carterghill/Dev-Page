@@ -4,6 +4,7 @@ import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
 import { Button } from "./Button"
 import './Navbar.css'
+import './MenuIcon.css'
 
 class Navbar extends Component {
 
@@ -12,7 +13,6 @@ class Navbar extends Component {
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
-
 
     render () {
 
@@ -24,7 +24,13 @@ class Navbar extends Component {
                     <div className={ this.state.clicked ? 'logo active' : 'logo' }><h2>Carter H.</h2></div>
 
                     <div className={ this.state.clicked ? 'menu-icon active' : 'menu-icon' }
-                    onClick={this.handleClick}>< MenuIcon /></div>
+                    onClick={this.handleClick}>
+                        <div class={this.state.clicked ? "change container" : 'container'}>
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
 
                     <ul className='top-list'>
                         {NavItems.map((item, index) => {
@@ -33,9 +39,8 @@ class Navbar extends Component {
                                 to={item.url}>{item.title}</Link></li>
                             )
                         })}
-                        <li className="button"><Link to='/contact'><Button>Contact</Button></Link></li>
+                        <li><Link className='btn' to='/contact'>Contact</Link></li>
                     </ul>
-
 
                 </div>
 
@@ -43,11 +48,11 @@ class Navbar extends Component {
                     <ul className='list'>
                         {NavItems.map((item, index) => {
                             return (
-                                <li className='item'><a className='item-link'
-                                href={item.url}>{item.title}</a></li>
+                                <li onClick={this.handleClick} className='item'><Link className='item-link'
+                                to={item.url}>{item.title}</Link></li>
                             )
                         })}
-                        <li className="button"><Button >Contact</Button></li>
+                        <li onClick={this.handleClick} className="button"><Link className='btn' to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
 
