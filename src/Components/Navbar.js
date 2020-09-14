@@ -5,6 +5,7 @@ import MenuIcon from "./MenuIcon"
 import { Button } from "./Button"
 import './Navbar.css'
 import './MenuIcon.css'
+import logo from '../logo.png';
 
 class Navbar extends Component {
 
@@ -21,7 +22,9 @@ class Navbar extends Component {
 
                 <div className={ this.state.clicked ? 'top-bar active' : 'top-bar' }>
 
-                    <div className={ this.state.clicked ? 'logo active' : 'logo' }><h2>Carter H.</h2></div>
+                    <div className={ this.state.clicked ? 'logo active' : 'logo' }>
+                        <h2>Carter H.</h2>
+                    </div>
 
                     <div className={ this.state.clicked ? 'menu-icon active' : 'menu-icon' }
                     onClick={this.handleClick}>
