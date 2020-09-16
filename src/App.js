@@ -22,7 +22,7 @@ function App() {
 
             <Navbar />
 
-            <div>
+            <div className='page'>
                 <Switch>
                     <Route path="/" component={Home} exact={true}/>
                     <Route path="/home" component={Home}/>

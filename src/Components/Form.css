@@ -1,0 +1,20 @@
+.form {
+    background-color: rgb(220, 220, 255);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.formHeader {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.formInput {
+    font-size: 1.15rem;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 5px;
+}
