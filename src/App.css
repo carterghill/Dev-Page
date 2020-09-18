@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+
+  align-items: baseline;
 }
 
 .page {
@@ -7,17 +9,18 @@
     white-space: -moz-pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    width: 80%;
+    width: 85%;
     max-width: 1080px;
     margin: auto;
+    transition: all 0.3s ease-out;
 }
 
 .header {
-    color: grey;
+    color: rgb(100,100,100);
     font-size: 1.75rem;
     padding: 2rem;
     border-bottom-style: solid;
-    border-color: rgb(235,235,235);
+    border-color: rgb(200,200,200);
     border-radius: 10px;
     border-width: 4px;
 }
@@ -25,15 +28,14 @@
 .body {
     display: inline-block;
     float: left;
-    margin: 2rem 0rem;
+    margin: 2.5rem 0rem;
+    width: 100%;
 }
 
-.contact {
-    float: left;
-    width: 70%;
-}
+@media screen and (max-width: 960px) {
 
-.contactDetails {
-    width: 30%;
-    float: right;
+    .page {
+        width: 90%;
+    }
+
 }

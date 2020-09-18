@@ -5,7 +5,7 @@ import Home from "./Home"
 import Projects from "./Projects"
 import About from "./About"
 import Resources from "./Resources"
-import Contact from "./Contact"
+import Contact from "./Pages/Contact"
 import './App.css';
 
 const PageNotFound = () => (

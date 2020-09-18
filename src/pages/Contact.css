@@ -1,0 +1,43 @@
+.contact {
+    float: left;
+    width: 65%;
+    color: rgb(75,75,75);
+    transition: all 0.3s ease-out;
+}
+
+.contactDetails {
+    width: 30%;
+    float: right;
+    text-align: right;
+    color: rgb(75,75,75);
+    transition: all 0.3s ease-out;
+}
+
+.compImg {
+    background-image: image('./computer.jpg');
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+@media screen and (max-width: 960px) {
+
+    .contact {
+        width: 100%;
+        transition: all 0.3s ease-out;
+    }
+
+    .contactDetails {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        color: rgb(75,75,75);
+        transition: all 0.3s ease-out;
+    }
+
+    .compImg {
+        width: 60%;
+    }
+
+
+}

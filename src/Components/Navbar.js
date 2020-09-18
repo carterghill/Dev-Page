@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
-import { Button } from "./Button"
 import './Navbar.css'
 import './MenuIcon.css'
 import logo from '../logo.png';
@@ -44,7 +43,7 @@ class Navbar extends Component {
                                     to={item.url}>{item.title}</Link></li>
                                 )
                             })}
-                            <li><Link className='btn' to='/contact'>Contact</Link></li>
+                            <li><Link id='contactButton' className='btn' to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
                 </div>

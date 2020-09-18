@@ -15,8 +15,8 @@ body {
 }
 
 .btn {
+    text-align: center;
     padding: 8px 20px;
-    margin-left: 24px;
     border-radius: 4px;
     outline: none;
     border: none;
@@ -63,10 +63,13 @@ body {
     justify-content: end;
     transform: translate(-80px, 0);
     width:100%;
-    max-width: 1440px;
     height:44px;
     overflow: hidden;
     white-space: nowrap;
+}
+
+#contactButton {
+    margin-left: 1.5rem;
 }
 
 .logo {
@@ -134,7 +137,6 @@ body {
 }
 
 .button {
-    padding-left: 32px;
 }
 .item-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
