@@ -1,12 +1,13 @@
 import React from 'react';
 import './Slogan.css';
-import logo from './tielogo.png'
+import Image from './Image'
 
 class Slogan extends React.Component {
 
   constructor(props) {
     super(props);
     this.props = {  title: 'default\n',
+                    img: '',
                     info: ''
                 };
 
@@ -20,7 +21,7 @@ class Slogan extends React.Component {
             {this.props.title}
           </div>
 
-          <img className='sloganImg' src={logo} ></img>
+          <Image className='sloganImg' img='tielogo.png' />
 
           <div className='sloganInfo'>
             {this.props.info}
