@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from "./Components/Navbar"
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import Home from "./Home"
-import Projects from "./Projects"
-import About from "./About"
-import Resources from "./Resources"
+import Home from "./Pages/Home"
+import Projects from "./Pages/Projects"
+import About from "./Pages/About"
+import Resources from "./Pages/Resources"
 import Contact from "./Pages/Contact"
 import './App.css';
 

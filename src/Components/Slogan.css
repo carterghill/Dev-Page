@@ -1,0 +1,22 @@
+.slogan {
+	width: 30%;
+	border-style: dotted;
+	border-color: rgb(200, 200, 255);
+	border-radius: 10px;
+    color: rgb(75,75,75);
+}
+
+.sloganTitle {
+	font-size: 1.35rem;
+	padding: 2rem;
+}
+
+.sloganImg {
+	width: 60%;
+	box-sizing: border-box; /* Prevent extending out of border */
+}
+
+.sloganInfo {
+	font-size: 1.1em;
+	padding: 2rem;
+}
