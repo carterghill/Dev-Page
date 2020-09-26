@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from '../Components/Form'
-import computer from '../computer.jpg';
+import Image from '../Components/Image';
 
 import './Contact.css';
 
@@ -17,7 +17,7 @@ function App() {
                 </div>
 
                 <div className='contactDetails'>
-                    <img src={computer} className='compImg'/>
+                    <Image img='computer.jpg' className='compImg'/>
                     <p id='details'>If you are contacting me for freelance work, please include
                         as many relevant details as possible. Whether you or your business
                         needs custom software or a new website, the more I know, the

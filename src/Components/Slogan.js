@@ -21,7 +21,7 @@ class Slogan extends React.Component {
             {this.props.title}
           </div>
 
-          <Image className='sloganImg' img='tielogo.png' />
+          <Image className='sloganImg' img={this.props.img} />
 
           <div className='sloganInfo'>
             {this.props.info}

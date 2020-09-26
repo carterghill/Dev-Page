@@ -4,7 +4,7 @@ import { NavItems } from "./NavItems";
 import MenuIcon from "./MenuIcon"
 import './Navbar.css'
 import './MenuIcon.css'
-import logo from '../logo.png';
+import Image from './Image';
 
 class Navbar extends Component {
 
@@ -24,7 +24,7 @@ class Navbar extends Component {
                     <div className="top-container">
                         <div className={ this.state.clicked ? 'logo active' : 'logo' }>
                             <h2>Carter</h2>
-                            <img className='logo-img' src={logo}/>
+                            <Image className='logo-img' img='logo.png' />
                         </div>
 
                         <div className={ this.state.clicked ? 'menu-icon active' : 'menu-icon' }
