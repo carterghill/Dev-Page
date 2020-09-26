@@ -8,14 +8,15 @@ class Slogan extends React.Component {
     super(props);
     this.props = {  title: 'default\n',
                     img: '',
-                    info: ''
+                    info: '',
+                    id: ''
                 };
 
   }
 
   render() {
     return (
-      <div className='slogan'>
+      <div id={this.props.id} className='slogan' >
 
           <div className='sloganTitle'>
             {this.props.title}

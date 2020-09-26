@@ -9,19 +9,21 @@ function App() {
         <div className='header'>Web Design, Full Stack, and Custom App Developement</div>
 
         <div className="homeSlogans">
-          <Slogan title='Tailored For You'
+          <Slogan id='slogan1' title='Tailored For You'
                   img='tielogo.png'
                   info="Some developers do too much, some do too little. I will make sure that your custom app or website is suited for your needs."
           />
-          <Slogan title='Efficient Code'
+          <Slogan id='slogan2' title='Efficient Code'
                   img='codelogo.png'
-                  info="Having been educated in computer science, I am trained to used the best methods for creating fast, effective software"
+                  info="Educated in computer science, I am trained to use the best algorithms for fast, effective software."
           />
-          <Slogan title='Tailored For You'
+          <Slogan id='slogan3' title='Beautiful Design'
                   img='tielogo.png'
-                  info="hi"
+                  info="I have always believed in function over form. However, sometimes elegent form can bring great function."
           />
         </div>
+
+
 
     </div>
 

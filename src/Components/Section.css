@@ -1,0 +1,54 @@
+.section {
+	transform: translateX(-10vw);
+	width: 95%;
+	display: flex;
+	border-style: none;
+	border-color: rgb(200, 200, 255);
+	border-radius: 10px;
+    color: rgb(75,75,75);
+	margin: 1rem;
+	margin-left: 0;
+	margin-top: 2rem;
+	background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(220,220,250,1) 100%);
+}
+
+.invis {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.section > :first-child { margin-left: 10vw; }
+
+.sectionText {
+	justify-content: flex-start;
+	align-self: center;
+	left: 8vw;
+}
+
+.sectionTitle {
+	font-size: 1.35rem;
+	padding: 1rem;
+}
+
+.sectionIcon {
+	justify-content: flex-end;
+	flex-basis: 400px;
+	align-self: center;
+	padding: 1rem;
+	margin-left: 1rem;
+}
+
+.sectionImg {
+	box-sizing: border-box; /* Prevent extending out of border */
+	width: 100%;
+}
+
+.sectionInfo {
+	font-size: 1.1em;
+	padding: 1rem;
+	padding-top: 0.25rem;
+	text-align: left;
+	border-top-style: double;
+	padding-top: 0.75rem;
+}
