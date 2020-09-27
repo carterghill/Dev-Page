@@ -6,6 +6,7 @@ import './Home.css';
 function App() {
   return (
     <div>
+    
         <div className='header'>Web Design, Full Stack, and Custom App Developement</div>
 
         <div className="homeSlogans">

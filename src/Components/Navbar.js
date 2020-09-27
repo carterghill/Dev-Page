@@ -11,7 +11,8 @@ class Navbar extends Component {
     state = { clicked: false }
 
     handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+        this.setState({ clicked: !this.state.clicked });
+        /*window.history.pushState("object or string", "Title", "/new-url");*/
     }
 
     render () {

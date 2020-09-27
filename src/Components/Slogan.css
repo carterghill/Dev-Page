@@ -6,6 +6,7 @@
     color: rgb(75,75,75);
 	margin: 1rem;
 	margin-top: 2rem;
+	z-index: 0;
 }
 
 .sloganTitle {

@@ -13,6 +13,7 @@
     max-width: 1080px;
     margin: auto;
     transition: all 0.3s ease-out;
+    z-index: -1;
 }
 
 .header {
@@ -38,4 +39,22 @@
         width: 90%;
     }
 
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
 }

@@ -6,8 +6,8 @@ body {
     overflow-x: hidden;
     white-space: nowrap;
     -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
@@ -42,6 +42,7 @@ body {
     height: 80px;
     width: 100%;
     align-items: center;
+    z-index: 10;
 }
 
 .top-container {
@@ -185,6 +186,7 @@ body {
         width: 70%;
         height: 100vh;
         transition: all 0.5s ease-out;
+        z-index: 100;
     }
 
     .list {
