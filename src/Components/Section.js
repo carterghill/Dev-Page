@@ -10,14 +10,22 @@ class Slogan extends React.Component {
                     img: '',
                     info: '',
                     id: '',
-                    github: ''
+                    github: '',
+                    side: 'left'
                 };
 
   }
 
   render() {
     return (
-      <div id={this.props.id} className='section' >
+      <div id={this.props.id} className={ this.props.side === 'right' ? 'section right' : 'section' } >
+
+          <div className={ this.props.side === 'right' ? 'sectionIcon' : 'invis' }>
+            <Image className='sectionImg' img={this.props.img} />
+            <div className={ this.props.github === '' ? 'invis' : '' } >
+              Github: <a href={this.props.github}>Here</a>
+            </div>
+          </div>
 
           <div className='sectionText'>
             <div className='sectionTitle'>
@@ -29,7 +37,7 @@ class Slogan extends React.Component {
             </div>
           </div>
 
-          <div className='sectionIcon'>
+          <div className={ this.props.side === 'right' ? 'invis' : 'sectionIcon' }>
             <Image className='sectionImg' img={this.props.img} />
             <div className={ this.props.github === '' ? 'invis' : '' } >
               Github: <a href={this.props.github}>Here</a>
