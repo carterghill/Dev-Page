@@ -14,6 +14,7 @@
 
 #slogan1 {
 	opacity: 0%;
+	animation-delay: 0.25s;
 	animation-delay: 0s;
 	animation-name: fadein;
 	animation-duration: 2s;
@@ -22,7 +23,7 @@
 
 #slogan2 {
 	opacity: 0%;
-	animation-delay: 0.25s;
+	animation-delay: 0.5s;
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
@@ -30,7 +31,7 @@
 
 #slogan3 {
 	opacity: 0%;
-	animation-delay: 0.5s;
+	animation-delay: 0.9s;
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
