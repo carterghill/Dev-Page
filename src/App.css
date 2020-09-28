@@ -13,7 +13,13 @@
     max-width: 1080px;
     margin: auto;
     transition: all 0.3s ease-out;
-    z-index: -1;
+}
+
+#route {
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
 }
 
 .header {
@@ -41,20 +47,48 @@
 
 }
 
-.fade-enter {
-    opacity: 0.01;
+@keyframes fadein {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
 }
 
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
+@keyframes fadeout {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 0%;
+	}
 }
 
-.fade-exit {
-    opacity: 1;
+.fade-route {
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
 }
 
-.fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+.fade-route-exit-active {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 1080px;
+	animation-delay: 0s;
+	animation-name: fadeout;
+	animation-duration: 0.33s;
+	animation-fill-mode: forwards;
+}
+
+.fade-route-enter-active {
+	opacity: 0%;
+	animation-delay: 0s;
+	animation-name: fadein;
+	animation-duration: 0.33s;
+	animation-fill-mode: forwards;
 }
