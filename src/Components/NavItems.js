@@ -4,12 +4,12 @@ export const NavItems = [
         url: 'home'
     },
     {
-        title: 'Projects',
-        url: 'projects'
-    },
-    {
         title: 'About',
         url: 'about'
+    },
+    {
+        title: 'Projects',
+        url: 'projects'
     },
     {
         title: 'Resources',

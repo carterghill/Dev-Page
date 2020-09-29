@@ -23,3 +23,26 @@
 	font-size: 1.1em;
 	padding: 2rem;
 }
+
+@media screen and (max-width: 960px) {
+
+	.slogan {
+		width: 100%;
+		box-sizing: border-box;
+		margin: 1rem 0;
+	}
+
+	.sloganTitle {
+		font-size: 1.25rem;
+		padding: 1.5rem;
+	}
+
+	.sloganImg {
+		width: 40%;
+	}
+
+	.sloganInfo {
+		font-size: 1.1em;
+		padding: 1.5rem;
+	}
+}
