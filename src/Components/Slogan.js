@@ -6,17 +6,22 @@ class Slogan extends React.Component {
 
   constructor(props) {
     super(props);
+
+
+
     this.props = {  title: 'default\n',
                     img: '',
                     info: '',
-                    id: ''
+                    id: '',
+                    onClick: ""
                 };
+
 
   }
 
   render() {
     return (
-      <div id={this.props.id} className='slogan' >
+      <div id={this.props.id} onClick={this.props.onClick} className='slogan' >
 
           <div className='sloganTitle'>
             {this.props.title}

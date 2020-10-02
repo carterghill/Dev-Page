@@ -10,8 +10,9 @@ class Slogan extends React.Component {
                     img: '',
                     info: '',
                     id: '',
-                    github: '',
-                    side: 'left'
+                    github: 'none',
+                    side: 'left',
+                    website: 'none'
                 };
 
   }
@@ -22,8 +23,11 @@ class Slogan extends React.Component {
 
           <div className={ this.props.side === 'right' ? 'sectionIcon' : 'invis' }>
             <Image className='sectionImg' img={this.props.img} />
-            <div className={ this.props.github === '' ? 'invis' : '' } >
+            <div className={ this.props.github === 'none' ? 'invis' : 'link' } >
               Github: <a href={this.props.github}>Here</a>
+            </div>
+            <div className={ this.props.website === "none" ? 'invis' : 'link' } >
+              Website: <a href={this.props.website}>Here</a>
             </div>
           </div>
 
@@ -33,14 +37,17 @@ class Slogan extends React.Component {
             </div>
 
             <div className='sectionInfo'>
-              {this.props.info}
+              {this.props.children}
             </div>
           </div>
 
           <div className={ this.props.side === 'right' ? 'invis' : 'sectionIcon' }>
             <Image className='sectionImg' img={this.props.img} />
-            <div className={ this.props.github === '' ? 'invis' : '' } >
+            <div className={ this.props.github === "none" ? 'invis' : 'link' } >
               Github: <a href={this.props.github}>Here</a>
+            </div>
+            <div className={ this.props.website === "none" ? 'invis' : 'link' } >
+              Website: <a href={this.props.website}>Here</a>
             </div>
           </div>
 

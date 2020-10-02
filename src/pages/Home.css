@@ -2,6 +2,16 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
+	height: 100%;
+}
+
+.homeSections {
+	border-top-style: dashed;
+	border-color: inherit;
+	margin-top: 2rem;
+	padding-top: 0.75rem;
+	width: 100%;
+    border-color: rgb(200,200,200);
 }
 
 @keyframes fadein {
@@ -22,7 +32,43 @@
 	}
 }
 
-#slogan1Start
+@keyframes slidein {
+	from {
+		transform: translateX(-120%);
+	}
+	to {
+		opacity: 100%;
+		left: 0;
+	}
+}
+
+@keyframes slideinright {
+	from {
+		transform: translateX(120%);
+	}
+	to {
+		opacity: 100%;
+		left: 0;
+	}
+}
+
+#homeSection2,
+#homeSection {
+	opacity: 0;
+	animation-delay: 1.5s;
+	animation-name: slidein;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#homeSection2 {
+	animation-delay: 2s;
+ 	float: right;
+	animation-name: slideinright;
+}
+
+#slogan1Out,
+#slogan1Start,
 #slogan1 {
 	opacity: 0%;
 	animation-delay: 0.25s;
@@ -31,7 +77,8 @@
 	animation-fill-mode: forwards;
 }
 
-#slogan2Start
+#slogan2Out,
+#slogan2Start,
 #slogan2 {
 	opacity: 0%;
 	animation-delay: 0.5s;
@@ -40,7 +87,8 @@
 	animation-fill-mode: forwards;
 }
 
-#slogan3Start
+#slogan3Out,
+#slogan3Start,
 #slogan3 {
 	opacity: 0%;
 	animation-delay: 0.9s;
@@ -55,12 +103,12 @@
 	#slogan1Start {
 		opacity: 0%;
 		position: absolute;
-		top: 0;
 		animation: none;
+		top: 0;
 	}
 	#slogan1 {
 		opacity: 0%;
-		position: absolute;
+		position: relative;
 		top: 0;
 		animation-delay: 1s;
 		animation-name: fadein;
@@ -71,8 +119,8 @@
 	#slogan2Start {
 		opacity: 0%;
 		position: absolute;
-		top: 0;
 		animation: none;
+		top: 0;
 	}
 	#slogan2 {
 		opacity: 0%;
@@ -87,8 +135,8 @@
 	#slogan3Start {
 		opacity: 0%;
 		position: absolute;
-		top: 0;
 		animation: none;
+		top: 0;
 	}
 	#slogan3 {
 		opacity: 0%;
@@ -102,7 +150,7 @@
 
 	#slogan1Out {
 		opacity: 0%;
-		position: absolute;
+		position: relative;
 		top: 0;
 		animation-delay: 0s;
 		animation-name: fadeout;
@@ -128,6 +176,10 @@
 		animation-name: fadeout;
 		animation-duration: 1s;
 		animation-fill-mode: forwards;
+	}
+
+	#homeSection {
+		position: relative;
 	}
 
 }
