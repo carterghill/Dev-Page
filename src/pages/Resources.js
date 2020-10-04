@@ -12,7 +12,6 @@ function App() {
                   website='https://atom.io/'
                   img='atom.png'
                   side='right'
-                  github='none'
         >
            "A hackable text editor for the 21st Century". Atom is a robust, multi-purpose
            text editor. It's high customizeability allows it to act as a simple text editor,
