@@ -17,12 +17,25 @@ function App() {
                 </div>
 
                 <div className='contactDetails'>
-                    <Image img='computer.jpg' className='compImg'/>
-                    <p id='details'>If you are contacting me for freelance work, please include
-                        as many relevant details as possible. Whether you or your business
-                        needs custom software or a new website, the more I know, the
-                        better I can make the product work for you.
+                    <Image img="computer.jpg" className='compImg'/>
+                    <p id='details'>
+                        If you are contacting me about creating a new custom program
+                        or website, please include some of the following details:
                     </p>
+                    <ul id='detailList'>
+                        <li>Main purpose of the product •</li>
+                        <li>Long term goals •</li>
+                        <li>Target Audience •</li>
+                        <li>Budget •</li>
+                        <li>Deadline •</li>
+                    </ul>
+
+                    <p>
+                        It's okay to be a general as you want or need for now. You
+                        can expect to hear from me within one week, at which point
+                        we can discuss the project in further detail.
+                    </p>
+
                 </div>
 
         </div>

@@ -18,25 +18,17 @@
 	}
 }
 
-#proSection3,
-#proSection2,
-#proSection1 {
+#section1,
+#section2 {
 	opacity: 0;
-	animation-delay: 0s;
+	animation-delay: 0.5s;
 	animation-name: slidein;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-#proSection2 {
-	animation-delay: 0.5s;
+#section1 {
+	animation-delay: 0s;
  	float: right;
 	animation-name: slideinright;
-	z-index: 1;
-	margin-top: 1rem;
-	margin-bottom:2rem;
-}
-
-#proSection3 {
-	animation-delay: 1s;
 }
