@@ -11,7 +11,6 @@
 	margin-left: 0;
 	margin-top: 2rem;
 	background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(220,220,250,1) 100%);
-
     overflow-y: hidden;
 }
 
@@ -65,4 +64,45 @@
 
 .link {
 	z-index: 1000000;
+}
+
+@media screen and (max-width: 960px) {
+
+	.section {
+		flex-direction: column;
+		left: 0;
+		transform: translateX(0);
+		border-radius: 0;
+		width: 100%;
+		background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(220,220,250,1) 10%, rgba(220,220,250) 90%, rgba(255,255,255) 100%);
+		padding: auto;
+	}
+
+	.section.right {
+		transform: none;
+		background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(220,220,250,1) 10%, rgba(220,220,250) 90%, rgba(255,255,255) 100%);
+		margin: auto;
+		flex-direction: column-reverse;
+	}
+
+	.sectionIcon {
+		justify-content: flex-end;
+		padding: auto;
+		align-self: center;
+		box-sizing: border-box;
+	}
+
+	.sectionInfo {
+		margin: auto;
+		border-top-style: none;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+
+	.sectionImg {
+		box-sizing: border-box; /* Prevent extending out of border */
+		width: 50%;
+		padding-bottom: 0;
+	}
+
 }

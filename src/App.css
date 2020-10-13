@@ -45,6 +45,13 @@
         width: 90%;
     }
 
+    .fade-route-exit-active {
+        position: absolute;
+        top: 80px;
+        left: 5vw;
+        right: 5vw;
+    }
+
 }
 
 @keyframes fadein {
@@ -75,8 +82,8 @@
 .fade-route-exit-active {
     position: absolute;
     top: 80px;
-    left: 0;
-    right: 0;
+    left: 7.5vw;
+    right: 7.5vw;
     margin: auto;
     max-width: 1080px;
 	animation-delay: 0s;

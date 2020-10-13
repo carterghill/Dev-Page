@@ -45,6 +45,17 @@ function App() {
           you can also ask him for frame data on any melee character.
         </Section>
 
+        <Section id='proSection4' title='Linux Scripts'
+                       github='https://github.com/carterghill/linux-scripts'
+                       img='linux.png'
+                       side='right'
+        >
+          A collection of automation scripts used in my Linux based systems. Mostly for personal use,
+          but I'm sure many Linux users (especially those on a Macbook) would find these useful.
+          This contains basic brightness control, auto backgrounds, and the beginnings of
+          an alternative "dmenu".
+        </Section>
+
     </div>
   );
 }
